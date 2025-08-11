@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média em HTML5</title>
+</head>
+<body>
+    <h1>IMAGEM DINÂMICA</h1>
+    <P>Tente abrir esse site em vários arquivos diferentes simplesmente aumente e diminiu o tamanho do seu navegador.</P>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+         <img src="imagens/FOTO-G.png" alt="Imagem flexível">
+    </picture>
+
+    <h1> Reproduzindo Aúdio    </h1>
+    <p>Mbora aprender a reproduzir aúdio em HTML5</p>
+
+    <h2> 1º Método</h2>
+    <audio src="media/ISAIAS SAAD - BONDADE DE DEUS (AO VIVO)(M4A_128K).m4a" controls autoplay ></audio>
+    <h2>2º Método</h2>
+   <audio  preload="metadata"  autoplay controls>
+       <source src="media/ISAIAS SAAD - BONDADE DE DEUS (AO VIVO)(M4A_128K).m4a" type="audio/mp3">
+       <source src="media/ISAIAS SAAD - BONDADE DE DEUS (AO VIVO)(M4A_128K).ogg" type="audio/ogg">
+       <source src="media/ISAIAS SAAD - BONDADE DE DEUS (AO VIVO)(M4A_128K).wav" type="audio/wav">
+       <p>
+        Infelizmente seu navegador não consegue reproduzir aúdio. <a href="">Click aqui para baixar o arquivo mp3.</a>
+       </p>
+   </audio>
+
+   <audio >
+    <source src="" type="">
+
+   </audio>
+
+</body>
+</html>
