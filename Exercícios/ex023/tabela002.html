@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+       table{
+        border: 2px solid black;
+        border-collapse: collapse;
+        width: 300px;
+    }
+
+       td,th {
+        border: 1px solid black;
+       }
+       thead, tfoot{
+        background-color: gray;
+        color: white;
+       }
+    </style>
+</head>
+<body>
+    <h1>
+        Uso de tabelas grandes
+    </h1>
+    <!--
+    ANATOMIA PARA TABELAS GRANDES 
+    TABLE
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH
+    -->
+            <table>
+                <thead>
+                    <th>Estado</th>
+                    <th>População</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Benguela</td>
+                        <td>1 543 678</td>
+                    </tr>
+                    <tr>
+                        <td>Luanda</td>
+                        <td> 1 050 555</td>
+                    </tr>
+                    <tr>
+                        <td>Huíla</td>
+                        <td> 1 000 555</td>
+                    </tr>
+                    <tfoot>
+                        <tr>
+                            <td>Total de Habitantes</td>
+                            <td>0000</td>
+                        </tr>
+                    </tfoot>
+                </tbody>
+            </table>
+</body>
+</html>
