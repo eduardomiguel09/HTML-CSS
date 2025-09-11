@@ -5,19 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela</title>
     <style>
+        body{
+            font-family:'Times New Roman', Times, serif    
+     }
        table{
-        border: 2px solid black;
+        border: 2px solid rgba(0, 0, 0, 0.5);
         border-collapse: collapse;
-        width: 300px;
+        width: 400px;
+        position: relative;
     }
-
+       td.num{
+        text-align:right;
+    }
        td,th {
         border: 1px solid black;
-       }
+        padding: 5px;
+    }
        thead, tfoot{
         background-color: gray;
         color: white;
-       }
+     }
+     thead > tr > th{
+        background-color: gray;
+        position: sticky;
+        top: -1px;
+     }
+     tbody > tr:nth-child(2n){
+        background-color: lightgray;
+     }
+     caption{
+        background-color: lightgray;
+        color: rgb(20, 20, 20);
+        font-size: 1.3em;
+        font-weight: bold;
+        padding: 5px;
+        border-radius: 10px 10px 0px 0px ;
+     }
     </style>
 </head>
 <body>
@@ -35,30 +58,170 @@
             TR, TD, TH
     -->
             <table>
+                <caption> Lista dos Municipios de Benguela </caption>
                 <thead>
-                    <th>Estado</th>
-                    <th>População</th>
+                    <th scope="col">Municipio</th>
+                    <th scope="col" style="width: 90px;">População</th>
                 </thead>
                 <tbody>
                     <tr>
                         <td>Benguela</td>
-                        <td>1 543 678</td>
+                        <td class="num">1 543 678</td>
                     </tr>
                     <tr>
-                        <td>Luanda</td>
-                        <td> 1 050 555</td>
+                        <td>Lobito</td>
+                        <td class="num"> 1 050 555</td>
                     </tr>
                     <tr>
-                        <td>Huíla</td>
-                        <td> 1 000 555</td>
+                        <td>Catumbela</td>
+                        <td class="num"> 1 000 555</td>
                     </tr>
+                    <tr>
+                        <td> Baia Farta</td>
+                        <td class="num" class="num"> 1 000 400</td>
+                    </tr>
+                    <tr>
+                        <td>Graça </td>
+                        <td class="num"> 1 000 000</td>
+                    </tr>
+                    <tr>
+                        <td>Vimbalambe </td>
+                        <td class="num"> 909 000</td>
+                    </tr>
+                    <tr>
+                        <td> Cubal</td>
+                        <td class="num"> 900 000</td>
+                    </tr>
+                    <tr>
+                        <td>Bocoio </td>
+                        <td class="num"> 899 050 </td>
+                    </tr>
+                    <tr>
+                        <td> Graça</td>
+                        <td class="num"> 800 000</td>
+                    </tr>
+                    <tr>
+                        <td> Chongoroi</td>
+                        <td class="num"> 700 000</td>
+                    </tr>
+                    <tr>
+                        <td> Navegantes</td>
+                        <td class="num"> 500 000</td>
+                    </tr>
+                    <tr>
+                        <td>Benguela</td>
+                        <td class="num">1 543 678</td>
+                    </tr>
+                    <tr>
+                        <td>Lobito</td>
+                        <td class="num"> 1 050 555</td>
+                    </tr>
+                    <tr>
+                        <td>Catumbela</td>
+                        <td class="num"> 1 000 555</td>
+                    </tr>
+                    <tr>
+                        <td> Baia Farta</td>
+                        <td class="num" class="num"> 1 000 400</td>
+                    </tr>
+                    <tr>
+                        <td>Graça </td>
+                        <td class="num"> 1 000 000</td>
+                    </tr>
+                    <tr>
+                        <td>Vimbalambe </td>
+                        <td class="num"> 909 000</td>
+                    </tr>
+                    <tr>
+                        <td> Cubal</td>
+                        <td class="num"> 900 000</td>
+                    </tr>
+                    <tr>
+                        <td>Bocoio </td>
+                        <td class="num"> 899 050 </td>
+                    </tr>
+                    <tr>
+                        <td> Graça</td>
+                        <td class="num"> 800 000</td>
+                    </tr>
+                    <tr>
+                        <td> Chongoroi</td>
+                        <td class="num"> 700 000</td>
+                    </tr>
+                    <tr>
+                        <td> Navegantes</td>
+                        <td class="num"> 500 000</td>
+                    </tr>
+                    <tr>
+                        <td>Benguela</td>
+                        <td class="num">1 543 678</td>
+                    </tr>
+                    <tr>
+                        <td>Lobito</td>
+                        <td class="num"> 1 050 555</td>
+                    </tr>
+                    <tr>
+                        <td>Catumbela</td>
+                        <td class="num"> 1 000 555</td>
+                    </tr>
+                    <tr>
+                        <td> Baia Farta</td>
+                        <td class="num" class="num"> 1 000 400</td>
+                    </tr>
+                    <tr>
+                        <td>Graça </td>
+                        <td class="num"> 1 000 000</td>
+                    </tr>
+                    <tr>
+                        <td>Vimbalambe </td>
+                        <td class="num"> 909 000</td>
+                    </tr>
+                    <tr>
+                        <td> Cubal</td>
+                        <td class="num"> 900 000</td>
+                    </tr>
+                    <tr>
+                        <td>Bocoio </td>
+                        <td class="num"> 899 050 </td>
+                    </tr>
+                    <tr>
+                        <td> Graça</td>
+                        <td class="num"> 800 000</td>
+                    </tr>
+                    <tr>
+                        <td> Chongoroi</td>
+                        <td class="num"> 700 000</td>
+                    </tr>
+                    <tr>
+                        <td> Navegantes</td>
+                        <td class="num"> 500 000</td>
+                    </tr>
+
                     <tfoot>
                         <tr>
-                            <td>Total de Habitantes</td>
-                            <td>0000</td>
+                            <th scope="row">Total de municipios</th>
+                            <td  class="num">9 134 000</td>
                         </tr>
                     </tfoot>
                 </tbody>
             </table>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum labore veritatis, nostrum nemo repellendus cum. Animi, sit, aut laborum id, magni ex culpa reiciendis expedita assumenda error nisi esse tempora!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum modi, perspiciatis quis tempore rerum cum facere repudiandae quas reprehenderit veniam optio nam, ad ipsam quibusdam quia tempora adipisci unde totam?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet natus voluptatibus at explicabo, similique sed ipsa sint quas nesciunt. Eveniet doloremque dolores quod cum maxime, maiores deleniti rerum soluta repellendus.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum dignissimos sit possimus reiciendis placeat enim. Et voluptatem tempora veniam, nesciunt, ex ipsam temporibus architecto, tenetur officiis cum vero nobis dolor.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum labore veritatis, nostrum nemo repellendus cum. Animi, sit, aut laborum id, magni ex culpa reiciendis expedita assumenda error nisi esse tempora!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum modi, perspiciatis quis tempore rerum cum facere repudiandae quas reprehenderit veniam optio nam, ad ipsam quibusdam quia tempora adipisci unde totam?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet natus voluptatibus at explicabo, similique sed ipsa sint quas nesciunt. Eveniet doloremque dolores quod cum maxime, maiores deleniti rerum soluta repellendus.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum dignissimos sit possimus reiciendis placeat enim. Et voluptatem tempora veniam, nesciunt, ex ipsam temporibus architecto, tenetur officiis cum vero nobis dolor.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum labore veritatis, nostrum nemo repellendus cum. Animi, sit, aut laborum id, magni ex culpa reiciendis expedita assumenda error nisi esse tempora!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum modi, perspiciatis quis tempore rerum cum facere repudiandae quas reprehenderit veniam optio nam, ad ipsam quibusdam quia tempora adipisci unde totam?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet natus voluptatibus at explicabo, similique sed ipsa sint quas nesciunt. Eveniet doloremque dolores quod cum maxime, maiores deleniti rerum soluta repellendus.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum dignissimos sit possimus reiciendis placeat enim. Et voluptatem tempora veniam, nesciunt, ex ipsam temporibus architecto, tenetur officiis cum vero nobis dolor.
+            </p>
 </body>
 </html>
